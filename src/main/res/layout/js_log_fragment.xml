@@ -10,5 +10,4 @@
         android:layout_height="wrap_content"
         android:text="@string/log_info"
         android:id="@+id/jsLogTV"/>
-
 </FrameLayout>
