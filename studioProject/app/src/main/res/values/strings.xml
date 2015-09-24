@@ -3,4 +3,7 @@
 
     <string name="log_info">JS Log information</string>
     <string name="action_settings">Settings</string>
+
+    <string name="soundcloud_url">http://ptech.me/trst</string>
+    <string name="stackoverflow_url">http://ptech.me/stck</string>
 </resources>

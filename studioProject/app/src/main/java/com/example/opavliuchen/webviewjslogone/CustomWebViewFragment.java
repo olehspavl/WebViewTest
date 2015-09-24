@@ -1,8 +1,6 @@
 package com.example.opavliuchen.webviewjslogone;
 
-import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,8 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.ConsoleMessage;
-import android.webkit.JsPromptResult;
-import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -23,7 +19,7 @@ import android.webkit.WebViewClient;
 public class CustomWebViewFragment extends Fragment {
 
     private static final String WEB_VIEW_CONTENT_URL = "com.example.opavliuchen.webviewjslogone.content_url";
-//    private static final String CAP = "https://www.google.com.ua/";
+    private static final String CAP = "https://www.google.com.ua/";
     private String mUrl;
     private WebView mWebView;
     private OnJSConsoleMessageListener mCallback;
@@ -41,8 +37,8 @@ public class CustomWebViewFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
         mUrl = (String) getArguments().getSerializable(WEB_VIEW_CONTENT_URL);
-        assert(mUrl != null);
-//        if (mUrl == null) mUrl == CAP;
+//        assert(mUrl != null);
+        if (mUrl == null) mUrl = CAP;
     }
 
     @Nullable

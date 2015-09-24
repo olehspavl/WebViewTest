@@ -31,8 +31,6 @@ public class JSLogFragment extends Fragment {
     }
 
     public void updateLog(ConsoleMessage cm) {
-        mLogTextView.setText(mLogTextView.getText() + "\n" + cm.message()/* + " -- From line "
-                + cm.lineNumber() + " of "
-                + cm.sourceId()*/);
+        mLogTextView.append("\n" + cm.message());
     }
 }
